@@ -46,7 +46,7 @@ class DatabaseHelper(var context: Context) : SQLiteOpenHelper(context, DATABASEN
         return list
     }
 
-    fun updateDatabyName(name: String) {
+    fun updateDataByName(name: String) {
         val database = this.writableDatabase
         val contentValues = ContentValues()
     }
