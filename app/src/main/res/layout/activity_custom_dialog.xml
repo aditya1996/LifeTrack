@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="100dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginHorizontal="60dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <EditText
+                android:id="@+id/etDialogActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:textSize="24dp"
+                android:fontFamily="@font/caviar_dreams"
+                android:hint="Enter Your Activity" />
+
+            <Button
+                android:id="@+id/btnDialogEnter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="110dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/caviar_dreams"
+                android:backgroundTint="@color/teal_200"
+                android:text="Submit" />
+
+            <Button
+                android:id="@+id/btnDialogDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="170dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/caviar_dreams"
+                android:textStyle="bold"
+                android:backgroundTint="@color/black"
+                android:text="Reset" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
