@@ -1,18 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#F5F5F5"
     android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/tvCardText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="150dp"
-        android:text="Custom Text"
-        android:textSize="30dp"
+        android:text="Custom"
+        android:textColor="#30475E"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="60dp"
+        android:textSize="50sp"
+        android:textStyle="normal"
         android:fontFamily="@font/caviar_dreams"
         />
 
-</LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDaysCard"
+        app:cardBackgroundColor="#F5F5F5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="35dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tvCardText"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24"
+                android:fontFamily="@font/caviar_dreams"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Days"
+                android:fontFamily="@font/caviar_dreams"
+                android:textSize="30dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="14dp"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvAddDays"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/cvDaysCard"
+        app:cardBackgroundColor="#F05454"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="30dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ADD"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/caviar_dreams"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="13dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvCardStreak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Streak:"
+        android:textColor="#30475E"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="320dp"
+        android:textSize="38sp"
+        android:textStyle="normal"
+        android:fontFamily="@font/caviar_dreams"
+        />
+
+    <TextView
+        android:id="@+id/tvCardStreakNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textColor="#30475E"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="320dp"
+        android:textSize="38sp"
+        android:textStyle="normal"
+        android:fontFamily="@font/caviar_dreams"
+        />
+
+    <TextView
+        android:id="@+id/tvCardStarted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Started:"
+        android:textColor="#30475E"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="380dp"
+        android:textSize="28sp"
+        android:textStyle="normal"
+        android:fontFamily="@font/caviar_dreams"
+        />
+
+    <TextView
+        android:id="@+id/tvCardStartedNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2/6/2022"
+        android:textColor="#30475E"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="380dp"
+        android:textSize="28sp"
+        android:textStyle="normal"
+        android:fontFamily="@font/caviar_dreams"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F05454"
+        android:layout_below="@id/tvCardStartedNumber"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:text="RESET"
+        android:textStyle="bold"
+        android:fontFamily="@font/caviar_dreams"
+        android:textSize="20sp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        />
+
+</RelativeLayout>

@@ -63,6 +63,5 @@ class DatabaseHelper(var context: Context) : SQLiteOpenHelper(context, DATABASEN
         const val TABLENAME = "Activities"
         const val COL_ACT = "activity"
         const val COL_DAYS = "days"
-        const val COL_ID = "id"
     }
 }
